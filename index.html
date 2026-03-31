@@ -1,0 +1,20 @@
+<button onclick="hacerPregunta()">Haz clic</button>
+
+<script>
+function hacerPregunta() {
+  let respuesta = prompt("¿Participarías?");
+
+  if(respuesta) {
+    respuesta = respuesta.trim().toLowerCase(); // para que no importe mayúsculas
+    if(respuesta === "sí") {
+      alert("¡Genial! Sabía que dirías que sí 😎");
+    } else if(respuesta === "no") {
+      alert("Oh… está bien, otra vez será 😅");
+    } else {
+      alert("¡Entonces " + respuesta + "!");
+    }
+  } else {
+    alert("No respondiste 😅");
+  }
+}
+</script>
